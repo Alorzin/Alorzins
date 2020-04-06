@@ -170,6 +170,47 @@ body {
 /*---------------------------------------------- SIDENAV END ---------------------------------------*/
 /*--------------------------------------------------------------------------------------------------*/
 
+
+/*--------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------- CONTACT INIT ---------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+
+#box {
+  width: 90%;
+  max-width: 980px;
+  background-color: whitesmoke;
+
+  margin: 2% 0 0 15%; /* TOP,RIGHT, BOTTOM, LEFT */
+  display: flex;
+  box-shadow: 0px 4px 16px -8px rgba(1, 1, 1, 0.1);/* sombra do botão*/
+
+}
+
+.box_1{
+  width:490px;
+  margin: 30 20px 0 0; /* TOP,RIGHT, BOTTOM, LEFT */
+
+  background-color: whitesmoke;
+    
+  border-radius: 8px; /* arredondar as bordas*/
+  padding: 32px; /* Inserir uma margem interna para o box, para não ficar colado */
+  box-shadow: 0px 4px 16px -8px rgba(red, 0.1);/* sombra do botão*/
+}
+
+.box_2{
+  display: flex;
+  width:490px;
+}
+
+main {
+  margin: 20% 5% 5% 5%; /* TOP,RIGHT, BOTTOM, LEFT */
+  text-align: justify;
+
+}
+/*--------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------- CONTACT END ---------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+
 .hide {
     display:none;
 }
@@ -214,9 +255,7 @@ p, .description { /* Alterar definições de fonte no texto de abertura e do tex
     box-shadow: 0px 4px 16px -8px rgba(1, 1, 1, 0.1);/* sombra do botão*/
 }
 
-main {
-    margin: 32px 0;
-}
+
 
 
 #buttons {
@@ -327,6 +366,46 @@ main {
 /*--------------------------------------------------------------------------------------------------*/
 /*--------------------------------------------- HOME.HTML END --------------------------------------*/
 /*--------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------------------------*/
+/*------------------------------------------CONTATO.HTML INIT --------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+
+.title_top h3{
+  position: absolute;
+  top: 1%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-left: 32px;
+  
+  color: #FF7C1F;
+  text-shadow: 2px 2px rgb(197, 197, 197);
+  
+  font-size: 54px; /* Tamanho da fonte */
+  line-height: 44px; /* Altura da fonte */
+  letter-spacing: 0.2px; /* Espaçamento das letras */
+  font-weight: bold; /* Negrito */
+
+}
+/*.title_top h2{
+
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  margin:32px;
+
+  font-size: 30px; /* Tamanho da fonte */
+  /*line-height: 28px; /* Altura da fonte */
+  /*letter-spacing: 0.2px; /* Espaçamento das letras */
+  /*font-weight: 500;
+  color: black;
+
+}
+/*--------------------------------------------------------------------------------------------------*/
+/*------------------------------------------CONTATO.HTML END --------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+
 
 #buttons {
     display: flex;
