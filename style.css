@@ -118,7 +118,6 @@ body {
 .home:hover {
   background-color: white;/* Cor do plano de fundo */
   color: orangered; /* Cor das letras */
-  border-color: orangered; /* Cor da borda do botão */
 }
 
 .aboutme img {
@@ -129,7 +128,6 @@ body {
 .aboutme:hover {
   background-color: white; /* Cor do plano de fundo */
   color: orangered; /* Cor das letras */
-  border-color: orangered; /* Cor da borda do botão */
 }
 
 .resume img {
@@ -140,7 +138,6 @@ body {
 .resume:hover {
   background-color: white; /* Cor do plano de fundo */
   color: orangered; /* Cor das letras */
-  border-color: orangered; /* Cor da borda do botão */
 }
 
 .experiencias img {
@@ -151,7 +148,6 @@ body {
 .experiencias:hover {
   background-color: white; /* Cor do plano de fundo */
   color: orangered; /* Cor das letras */
-  border-color: orangered; /* Cor da borda do botão */
 }
 
 .contatc img {
@@ -162,7 +158,6 @@ body {
 .contatc:hover {
   background-color: white; /* Cor do plano de fundo */
   color: orangered; /* Cor das letras */
-  border-color: orangered; /* Cor da borda do botão */
 }
 /*------------------------------------------- SIDENAV IMAGES END -----------------------------------*/
 
@@ -174,89 +169,71 @@ body {
 /*--------------------------------------------------------------------------------------------------*/
 /*--------------------------------------------- CONTACT INIT ---------------------------------------*/
 /*--------------------------------------------------------------------------------------------------*/
-
-#box {
+.corner_top{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  border-top: 3px solid #FF7C1F;
+  border-left: 3px solid #FF7C1F;
+}
+#box { /* Tamanho total da caixa*/
   width: 90%;
   max-width: 980px;
-  background-color: whitesmoke;
+  background-color: rgb(255, 255, 255);
 
   margin: 2% 0 0 15%; /* TOP,RIGHT, BOTTOM, LEFT */
   display: flex;
-  box-shadow: 0px 4px 16px -8px rgba(1, 1, 1, 0.1);/* sombra do botão*/
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.16);/* sombra do botão*/
 
 }
 
-.box_1{
-  width:490px;
-  margin: 30 20px 0 0; /* TOP,RIGHT, BOTTOM, LEFT */
-
-  background-color: whitesmoke;
-    
-  border-radius: 8px; /* arredondar as bordas*/
+#box_1{
+  width: 50%;
+  margin-top: 12%;
   padding: 32px; /* Inserir uma margem interna para o box, para não ficar colado */
-  box-shadow: 0px 4px 16px -8px rgba(red, 0.1);/* sombra do botão*/
 }
 
-.box_2{
-  display: flex;
-  width:490px;
+#box_2{
+  margin:5% 0 0 0;
+  padding: 32px; /* Inserir uma margem interna para o box, para não ficar colado */
 }
 
-main {
-  margin: 20% 5% 5% 5%; /* TOP,RIGHT, BOTTOM, LEFT */
-  text-align: justify;
-
+.content_box1 {
+  text-align: space-evenly;
+  margin: 5% 5% 5% 5%; /* TOP,RIGHT, BOTTOM, LEFT */
+  
 }
-/*--------------------------------------------------------------------------------------------------*/
-/*--------------------------------------------- CONTACT END ---------------------------------------*/
-/*--------------------------------------------------------------------------------------------------*/
-
-.hide {
-    display:none;
-}
-
 a {
-    color:black;
-    font-weight: bold;
-    text-decoration: none;
+  color:black;
+
 }
+.content_box1 img{
+  width: 50px;
+  height: 50px;
+  margin: 0% 5% 0% 0%; /* TOP,RIGHT, BOTTOM, LEFT */
+
+}
+
+.qrcode_description{
+
+  margin: 10% 5% 5% 5%; /* TOP,RIGHT, BOTTOM, LEFT */
+}
+.qrcode_description img{
+
+  width: 250px;
+  height: 250px;
+  display: block;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------- CONTACT END ----------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+
 
 a:hover {
     text-decoration: none; /*Definição para não ter soblinhado nos links */
 }
-
-p, .description { /* Alterar definições de fonte no texto de abertura e do texto da ideia */
-    font-size: 16px; /* Tamanho da fonte */
-    line-height: 24px; /* Altura da fonte */
-    letter-spacing: 0.1px; /* Espaçamento das letras */
-}
-
-#container {
-    width: 80%;
-    max-width: 980px;
-
-    margin: 0px auto; /* Margem entre às duas colunas e o cabeçalho */
-    display: flex;
-    
-}
-
-#intro { /* Largura da Coluna 1 */
-
-    margin-left: 45px; /* Same as the width of the sidebar */
-    padding: 0px 10px;
-
-    width: 800px; /* Largura da Coluna */
-    margin-right: 1px; /* espaçamento com a coluna do lado */
-    margin-bottom: 32px; /* Espaçamento com o fim da página */
-    background-color: white;
-    
-    border-radius: 8px; /* arredondar as bordas*/
-    padding: 32px; /* Inserir uma margem interna para o box, para não ficar colado */
-    box-shadow: 0px 4px 16px -8px rgba(1, 1, 1, 0.1);/* sombra do botão*/
-}
-
-
-
 
 #buttons {
   display: flex;
@@ -377,7 +354,7 @@ p, .description { /* Alterar definições de fonte no texto de abertura e do tex
   left: 50%;
   transform: translate(-50%, -50%);
   margin-left: 32px;
-  
+
   color: #FF7C1F;
   text-shadow: 2px 2px rgb(197, 197, 197);
   
@@ -520,7 +497,7 @@ button {
   text-align: center; /* alinhar o texto */
 
   border-radius: 6px; /* arredondar as bordas*/
-  box-shadow: 2px 2px rgb(197, 197, 197);
+
 
   cursor: pointer; /* Trocar o cursor no botão */
   outline: none; /*  */
