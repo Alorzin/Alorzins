@@ -241,15 +241,16 @@ a {
   display: block;
 }
 .contact_responsive img{
-  margin: 0% 5% 1% 5%; /* TOP,RIGHT, BOTTOM, LEFT */
+  margin: 0% 5% 0% 0%; /* TOP,RIGHT, BOTTOM, LEFT */
   width: 0px;
   height: 0px;
-
 }
 
 .contact_responsive{
   font-size: 0px;
-
+  text-align: space-evenly;
+  margin: 5% 5% 5% 5%; /* TOP,RIGHT, BOTTOM, LEFT */
+  
 }
 /*--------------------------------------------------------------------------------------------------*/
 /*------------------------------------ RESPONSIVO PÁGINA 404 INIT ----------------------------------*/
@@ -260,7 +261,7 @@ a {
   .qrcode_description img{width: 0; height:0}
   .contact_responsive img{width: 25px; height:25px}
   .title_top h3{font-size: 34px; right: 12%}
-  #box{margin-left: 41%;}
+  #box{margin-left: 39.5%;}
   #box{max-width: 59%;}
   .content_box1 img{width: 25px; height:25px}
   #box_1{padding: 32px 0 32px 0; /* Inserir uma margem interna para o box(TOP,RIGHT, BOTTOM, LEFT) */}
