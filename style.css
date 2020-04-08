@@ -249,7 +249,7 @@ a {
 .contact_responsive{
   font-size: 0px;
   text-align: space-evenly;
-  margin: 5% 5% 5% 5%; /* TOP,RIGHT, BOTTOM, LEFT */
+  margin: 0%; /* TOP,RIGHT, BOTTOM, LEFT */
   
 }
 /*--------------------------------------------------------------------------------------------------*/
@@ -268,7 +268,7 @@ a {
   #box_1{width: 100%; /* Inserir uma margem interna para o box(TOP,RIGHT, BOTTOM, LEFT) */}
   #box_2{max-width: 0%; padding: 0;}
   .content_box1{font-size: 8px;}
-  .contact_responsive{font-size: 8px;}
+  .contact_responsive{font-size: 8px; margin: 5% 5% 5% 5%; /* TOP,RIGHT, BOTTOM, LEFT */}
 }
 
 /*--------------------------------------------------------------------------------------------------*/
