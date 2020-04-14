@@ -135,6 +135,7 @@ body {
 .experiencias img {
   width: 3em; /* Largura da imagem */
   height: 3em; /* Altura da Imagem */
+  
 }
 
 .experiencias:hover {
