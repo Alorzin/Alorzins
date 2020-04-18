@@ -1,6 +1,6 @@
 body {
 
-    background-image: url(background.jpg); /* Alterar a cor de fundo*/
+    background-image: url(background.svg); /* Alterar a cor de fundo*/
 
 
     color: black; /* Cor geral das Letras */
@@ -133,9 +133,9 @@ body {
 }
 
 .experiencias img {
-  width: 3em; /* Largura da imagem */
-  height: 3em; /* Altura da Imagem */
-  
+  width: 45px; /* Largura da imagem */
+  height: 45px; /* Altura da Imagem */
+
 }
 
 .experiencias:hover {
@@ -309,7 +309,7 @@ a {
   .contact_responsive{font-size: 10px; margin: 5% 5% 5% 5%; /* TOP,RIGHT, BOTTOM, LEFT */}
 }
 
-
+  
 /*--------------------------------------------------------------------------------------------------*/
 /*------------------------------------ RESPONSIVO CONTACT END --------------------------------------*/
 /*--------------------------------------------------------------------------------------------------*/
@@ -339,11 +339,9 @@ a {
 }
 
 .foto_de_perfil img {
-
-    width: 230px; /* Largura da imagem */
-    height: 300px; /* Altura da Imagem */
-    
-
+ 
+  width: 230px; /* Largura da imagem */
+  height: 300px; /* Altura da Imagem */
     
 }
 
@@ -520,6 +518,7 @@ button {
   width: 100vw; /* Largura da imagem */
   height: 99.35vh; /* Altura da Imagem */
 
+
 }
 
 .button-404{
@@ -657,8 +656,9 @@ button {
 }
 
 .experiencias img {
-  width: 3em; /* Largura da imagem */
-  height: 3em;
+  display: block;
+  width: 70px; /* Largura da imagem */
+  height: 70px;
   margin-right: 32px; /* Distância da imagem da direita */
   margin-top: 64px; /* Distância da imagem do topo */
   object-fit: contain;
@@ -1014,9 +1014,9 @@ button {
 
 .about img{
   display: block;
-  width: 12em;
-  height: 16em;
-  margin: 3%; /* TOP,RIGHT, BOTTOM, LEFT */
+  width: 200px;
+  height: 300px;
+  margin: 22px; /* TOP,RIGHT, BOTTOM, LEFT */
 
 }
 .progress {
@@ -1038,8 +1038,19 @@ button {
   line-height: 30px;
   color: white;
   font-weight: 600;
-}
 
+/* Animation*/
+  animation: progress-bar 1s;
+
+}
+@keyframes progress-bar{
+  0%{
+    width:0%;
+  }
+  100%{
+    width:.6s;
+  }
+}
 .skill {
   display: grid;
   gap: 30px;
@@ -1066,7 +1077,7 @@ button {
   #box_about{margin-left: 40%;}
   .title_top_about h3{font-size: 42px;}
   .title_top_about h3{margin-left: 62px;}
-  .about img{width: 0em;}
+  .about img{width: 0px;}
   .about_content h3{margin-top: 0%;}
   .skill_title h3{font-size: 28px;margin-left: 33%;}
   .skill{display: block;}
@@ -1080,7 +1091,7 @@ button {
   #box_about{margin-left: 37%;}
   .title_top_about h3{font-size: 42px;}
   .title_top_about h3{margin-left: 62px;}
-  .about img{width: 0em;}
+  .about img{width: 0px;}
   .about_content h3{margin-top: 0%;}
   .skill_title h3{font-size: 28px;margin-left: 33%;}
   .skill{display: block;}
@@ -1094,7 +1105,7 @@ button {
   #box_about{margin-left: 35%;}
   .title_top_about h3{font-size: 42px;}
   .title_top_about h3{margin-left: 62px;}
-  .about img{width: 0em;}
+  .about img{width: 0px;}
   .about_content h3{margin-top: 0%;}
   .skill_title h3{font-size: 28px;margin-left: 33%;}
   .skill{display: block;}
@@ -1107,7 +1118,7 @@ button {
   #box_about{margin-left: 37%;}
   .title_top_about h3{font-size: 42px;}
   .title_top_about h3{margin-left: 62px;}
-  .about img{width: 0em;}
+  .about img{width: 0;}
   .about_content h3{margin-top: 0%;}
   .skill_title h3{font-size: 28px;margin-left: 33%;}
   .skill{display: block;}
@@ -1120,7 +1131,8 @@ button {
   #box_about{margin-left: 35%;}
   .title_top_about h3{font-size: 42px;}
   .title_top_about h3{margin-left: 62px;}
-  .about img{width: 0em;}
+  .about img{width: 0px;height: 0px;}
+  .about{display: block;}
   .about_content h3{margin-top: 0%;}
   .skill_title h3{font-size: 28px;margin-left: 33%;}
   .skill{display: block;}
@@ -1137,3 +1149,81 @@ button {
 /*--------------------------------------------------------------------------------------------------*/
 /*--------------------------------------- RESPONSIVO END -------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------*/
+#wrapper{
+  margin-right:5%;/* TOP,RIGHT, BOTTOM, LEFT */
+}
+.contato{
+  background-color: white;
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.16);/* sombra do botão*/
+  margin: 2%;
+
+}
+
+.title_contact h1 {
+color: #FF7C1F;
+font-weight: bold; /* Negrito */
+text-shadow: 2px 2px rgb(197, 197, 197);
+font-size: calc(2rem + 2vw);
+
+}
+/*--------------------------------------- SIDEBAR -------------------------------------------*/
+
+.sidebar_photo{
+  margin-top: 5%;
+  width: 100px;
+  height: 120px;
+}
+.sidebar_icon{
+  width: 45px;
+  height: 45px;
+  background-color: whitesmoke;
+  text-align: center;
+}
+#sidebar-wrapper{
+  width: 120px;
+  text-align: center;
+  background-color: whitesmoke;
+  height: 100vh;
+  margin-right: 5%;
+}
+.sidebar{
+  background-color: whitesmoke;
+
+}
+/*--------------------------------------- SIDEBAR -------------------------------------------*/
+
+.footers{
+  font-size: calc(0.75rem + 0.2vw);
+  margin: 2%;
+}
+.contact_info_block {
+  padding: 2%;  
+}
+.contact_info_block a{
+  color: black;
+  text-decoration: none;
+  font-size: calc(0.75rem + 0.2vw);
+
+}
+.contact_info_block img{
+  width: calc(20px + 2vw);
+  height: calc(20px + 2vh);
+  margin-right: 5%;
+}
+.qrcode_quote img{
+  width: 250px;
+  height: 250px;
+  margin: 5%;
+}
+.d-none .d-sm-block .qrcode_quote img{
+  width:0px;
+  height:0px;
+}
+.subpage_container{
+  padding: 5%;
+  margin-left: 5%;
+}
+@media screen and (min-height:450px) and (max-height:568px) {
+  .corner_top{border-top:0; height: 0;}
+  .qrcode_quote img{width: 0; height:0}
+}
